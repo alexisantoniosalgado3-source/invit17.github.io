@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Mis XV Años | Juliana</title>
+
+
+<!-- =====================================================
+     TIPOGRAFÍAS
+===================================================== -->
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    color: #526b88;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    overflow-x: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(181,211,239,.45),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 35%,
+            rgba(214,229,246,.55),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            180deg,
+            #e9f3fc 0%,
+            #ffffff 35%,
+            #f5f9fd 70%,
+            #dfeefa 100%
+        );
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+===================================================== */
+
+.page {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    min-height: 100vh;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.76),
+            rgba(244,249,254,.86)
+        );
+
+    box-shadow:
+
+        0 0 80px
+        rgba(68,103,140,.14);
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   BRILLOS DECORATIVOS DEL FONDO
+===================================================== */
+
+.page::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(255,255,255,.95),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 55%,
+            rgba(173,205,235,.20),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 75%,
+            rgba(173,205,235,.20),
+            transparent 25%
+        );
+
+    z-index: 0;
+}
+
+
+/* =====================================================
+   FLORES DECORATIVAS
+===================================================== */
+
+.flower {
+
+    position: absolute;
+
+    pointer-events: none;
+
+    z-index: 8;
+
+    user-select: none;
+
+    filter:
+        drop-shadow(
+            0 8px 14px
+            rgba(55,85,115,.12)
+        );
+
+    transition:
+        transform .5s ease;
+}
+
+
+/* =====================================================
+   ESQUINA SUPERIOR IZQUIERDA
+===================================================== */
+
+.flower-top-left {
+
+    top: -5px;
+
+    left: -10px;
+
+    width: 350px;
+
+    transform:
+        rotate(-5deg);
+}
+
+
+/* =====================================================
+   ESQUINA SUPERIOR DERECHA
+===================================================== */
+
+.flower-top-right {
+
+    top: -10px;
+
+    right: -10px;
+
+    width: 285px;
+
+    transform:
+        rotate(5deg);
+}
+
+
+/* =====================================================
+   ESQUINA INFERIOR IZQUIERDA
+===================================================== */
+
+.flower-bottom-left {
+
+    bottom: -15px;
+
+    left: -15px;
+
+    width: 285px;
+
+    transform:
+        rotate(5deg);
+}
+
+
+/* =====================================================
+   ESQUINA INFERIOR DERECHA
+===================================================== */
+
+.flower-bottom-right {
+
+    bottom: -15px;
+
+    right: -15px;
+
+    width: 285px;
+
+    transform:
+        rotate(-5deg);
+}
+
+
+/* =====================================================
+   FLOR LATERAL IZQUIERDA
+===================================================== */
+
+.flower-side-left {
+
+    left: -65px;
+
+    top: 43%;
+
+    width: 295px;
+
+    opacity: .72;
+
+    transform:
+        rotate(-8deg);
+}
+
+
+/* =====================================================
+   FLOR LATERAL DERECHA
+===================================================== */
+
+.flower-side-right {
+
+    right: -65px;
+
+    top: 60%;
+
+    width: 255px;
+
+    opacity: .72;
+
+    transform:
+        rotate(8deg);
+}
+
+
+/* =====================================================
+   DECORACIÓN DORADA
+===================================================== */
+
+.gold-decoration {
+
+    position: absolute;
+
+    width: 315px;
+
+    height: 265px;
+
+    border:
+
+        1px solid
+        rgba(190,157,84,.45);
+
+    border-radius:
+        70% 30% 70% 30%;
+
+    opacity: .45;
+
+    z-index: 1;
+}
+
+
+.gold-1 {
+
+    top: 130px;
+
+    right: 60px;
+
+    transform:
+        rotate(30deg);
+}
+
+
+.gold-2 {
+
+    bottom: 260px;
+
+    left: 60px;
+
+    transform:
+        rotate(-40deg);
+}
+
+
+/* =====================================================
+   PEQUEÑOS DESTELLOS
+===================================================== */
+
+.sparkle {
+
+    position: absolute;
+
+    color: #c6a968;
+
+    opacity: .55;
+
+    z-index: 3;
+
+    font-size: 14px;
+}
+
+
+.sparkle-1 {
+
+    top: 18%;
+
+    left: 23%;
+}
+
+
+.sparkle-2 {
+
+    top: 38%;
+
+    right: 20%;
+}
+
+
+.sparkle-3 {
+
+    top: 72%;
+
+    left: 20%;
+}
+
+
+.sparkle-4 {
+
+    top: 83%;
+
+    right: 22%;
+}
+
+
+/* =====================================================
+   CONTENIDO
+===================================================== */
+
+.cover,
+.section,
+footer {
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   PORTADA
+===================================================== */
+
+.cover {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding:
+        90px
+        35px
+        100px;
+}
+
+
+/* =====================================================
+   TEXTO SUPERIOR
+===================================================== */
+
+.invitation-text {
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    color: #6482a2;
+
+    margin-bottom: 22px;
+
+    text-transform: uppercase;
+
+    animation:
+        fadeDown 1.5s ease;
+}
+
+
+/* =====================================================
+   XV
+===================================================== */
+
+.xv {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(95px, 23vw, 165px);
+
+    line-height: 1;
+
+    color: #557fa8;
+
+    text-shadow:
+
+        0 3px 3px
+        rgba(60,95,130,.16),
+
+        0 0 30px
+        rgba(150,190,225,.25);
+
+    animation:
+        appear 2s ease;
+}
+
+
+/* =====================================================
+   AÑOS
+===================================================== */
+
+.anos {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 108px;
+
+    color: #6886a6;
+
+    margin-top: 1px;
+
+    animation:
+        appear 2.3s ease;
+}
+
+
+/* =====================================================
+   NOMBRE
+===================================================== */
+
+.name {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(48px, 11vw, 72px);
+
+    color: #5f83a9;
+
+    margin-top: 22px;
+
+    text-shadow:
+        0 2px 3px
+        rgba(70,100,130,.10);
+
+    animation:
+        appear 2.6s ease;
+}
+
+
+/* =====================================================
+   FRASE
+===================================================== */
+
+.phrase {
+
+    max-width: 420px;
+
+    margin:
+        28px auto;
+
+    font-size: 19px;
+
+    line-height: 1.55;
+
+    color: #657991;
+
+    font-style: italic;
+
+    animation:
+        fadeUp 2.8s ease;
+}
+
+
+/* =====================================================
+   SEPARADOR
+===================================================== */
+
+.divider {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin: 28px auto;
+
+    width: 190px;
+}
+
+
+.divider::before,
+.divider::after {
+
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c5a96b
+        );
+}
+
+
+.divider::after {
+
+    background:
+        linear-gradient(
+            90deg,
+            #c5a96b,
+            transparent
+        );
+}
+
+
+.divider span {
+
+    color: #c5a96b;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   FECHA
+===================================================== */
+
+.date {
+
+    margin-top: 25px;
+
+    animation:
+        fadeUp 3s ease;
+}
+
+
+.month {
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 43px;
+
+    font-weight: 500;
+
+    letter-spacing: 6px;
+
+    color: #71859d;
+
+    text-transform: uppercase;
+}
+
+
+.day {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 75px;
+
+    font-weight: 500;
+
+    color: #557b9f;
+
+    line-height: 1;
+
+    margin: 7px;
+}
+
+
+.time {
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #71849a;
+}
+
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.button {
+
+    display: inline-block;
+
+    padding:
+        14px
+        30px;
+
+    margin-top: 22px;
+
+    border:
+        1px solid
+        #9eb7d0;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    color: #557797;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    background:
+        rgba(255,255,255,.88);
+
+    box-shadow:
+
+        0 6px 20px
+        rgba(70,105,140,.10);
+
+    transition:
+        all .35s ease;
+}
+
+
+.button:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            #6d94bb,
+            #527da5
+        );
+
+    color: white;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+
+        0 12px 28px
+        rgba(70,105,140,.22);
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.section {
+
+    min-height: 70vh;
+
+    padding:
+        100px
+        35px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+.section-title {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 52px;
+
+    font-weight: normal;
+
+    color: #6086ac;
+
+    margin-bottom: 18px;
+
+    text-shadow:
+        0 2px 4px
+        rgba(70,100,130,.10);
+}
+
+
+.section-text {
+
+    max-width: 450px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #657b92;
+}
+
+
+/* =====================================================
+   UBICACIONES
+===================================================== */
+
+.location {
+
+    margin-top: 28px;
+
+    padding:
+        32px
+        28px;
+
+    border:
+        1px solid
+        rgba(126,157,188,.38);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.94),
+            rgba(239,247,253,.88)
+        );
+
+    border-radius: 22px;
+
+    width: 100%;
+
+    max-width: 440px;
+
+    box-shadow:
+
+        0 18px 45px
+        rgba(68,105,140,.13);
+
+    backdrop-filter:
+        blur(5px);
+}
+
+
+.location + .location {
+
+    margin-top: 25px;
+}
+
+
+.location-name {
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    color: #587c9f;
+
+    margin-bottom: 12px;
+}
+
+
+.location-address {
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+
+    color: #71859a;
+}
+
+
+/* =====================================================
+   GALERÍA
+===================================================== */
+
+.gallery {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 16px;
+
+    margin-top: 35px;
+}
+
+
+.gallery img {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1.25;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    border:
+        3px solid
+        rgba(255,255,255,.90);
+
+    box-shadow:
+
+        0 12px 30px
+        rgba(55,90,120,.18);
+
+    transition:
+        transform .5s ease,
+        box-shadow .5s ease;
+}
+
+
+.gallery img:hover {
+
+    transform:
+        scale(1.035);
+
+    box-shadow:
+
+        0 18px 40px
+        rgba(55,90,120,.25);
+}
+
+
+/* =====================================================
+   PADRES
+===================================================== */
+
+.parents {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+
+.parent-label {
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    color: #a58a56;
+
+    margin-bottom: 6px;
+}
+
+
+.parent-name {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 35px;
+
+    color: #6487a8;
+}
+
+
+/* =====================================================
+   RSVP
+===================================================== */
+
+.rsvp {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    padding:
+        40px
+        28px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.95),
+            rgba(238,247,253,.92)
+        );
+
+    border:
+        1px solid
+        rgba(143,171,198,.40);
+
+    border-radius: 28px;
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(65,100,135,.15);
+}
+
+
+/* =====================================================
+   MÚSICA
+===================================================== */
+
+.music {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    z-index: 100;
+
+    width: 54px;
+
+    height: 54px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        #9eb8d1;
+
+    background:
+        rgba(255,255,255,.94);
+
+    color: #5f83a6;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    box-shadow:
+
+        0 8px 25px
+        rgba(50,85,120,.22);
+
+    transition:
+        all .3s ease;
+}
+
+
+.music:hover {
+
+    transform:
+        scale(1.1);
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(50,85,120,.30);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    text-align: center;
+
+    padding:
+        65px
+        20px;
+
+    color: #7890a7;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+}
+
+
+/* =====================================================
+   ANIMACIONES
+===================================================== */
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(.95);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes fadeDown {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(-20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:600px) {
+
+    .flower-top-left {
+
+        width: 145px;
+
+        top: -5px;
+
+        left: -15px;
+    }
+
+
+    .flower-top-right {
+
+        width: 145px;
+
+        top: -5px;
+
+        right: -15px;
+    }
+
+
+    .flower-bottom-left {
+
+        width: 145px;
+
+        bottom: -10px;
+
+        left: -15px;
+    }
+
+
+    .flower-bottom-right {
+
+        width: 145px;
+
+        bottom: -10px;
+
+        right: -15px;
+    }
+
+
+    .flower-side-left {
+
+        width: 95px;
+
+        left: -45px;
+
+        top: 45%;
+
+        opacity: .60;
+    }
+
+
+    .flower-side-right {
+
+        width: 95px;
+
+        right: -45px;
+
+        top: 62%;
+
+        opacity: .60;
+    }
+
+
+    .cover {
+
+        padding:
+            75px
+            25px
+            90px;
+    }
+
+
+    .invitation-text {
+
+        font-size: 9px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .phrase {
+
+        font-size: 17px;
+
+        max-width: 330px;
+    }
+
+
+    .section {
+
+        padding:
+            85px
+            25px;
+    }
+
+
+    .section-title {
+
+        font-size: 45px;
+    }
+
+
+    .section-text {
+
+        font-size: 17px;
+    }
+
+
+    .location {
+
+        padding:
+            27px
+            20px;
+    }
+
+
+    .gallery {
+
+        gap: 10px;
+    }
+
+
+    .music {
+
+        right: 15px;
+
+        bottom: 15px;
+
+        width: 48px;
+
+        height: 48px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULARES PEQUEÑOS
+===================================================== */
+
+@media(max-width:380px) {
+
+    .flower-top-left,
+    .flower-top-right {
+
+        width: 120px;
+    }
+
+
+    .flower-bottom-left,
+    .flower-bottom-right {
+
+        width: 125px;
+    }
+
+
+    .xv {
+
+        font-size: 90px;
+    }
+
+
+    .anos {
+
+        font-size: 40px;
+    }
+
+
+    .name {
+
+        font-size: 44px;
+    }
+
+
+    .day {
+
+        font-size: 55px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- =====================================================
+     FLORES - ESQUINAS
+===================================================== -->
+
+<img
+    class="flower flower-top-left"
+    src="flores/esquina_superior_izquierda.png"
+    alt="">
+
+
+<img
+    class="flower flower-top-right"
+    src="flores/esquina_superior_derecha.png"
+    alt="">
+
+
+<img
+    class="flower flower-bottom-left"
+    src="flores/esquina_inferior_izquierda.png"
+    alt="">
+
+
+<img
+    class="flower flower-bottom-right"
+    src="flores/esquina_inferior_derecha.png"
+    alt="">
+
+
+<!-- =====================================================
+     FLORES - COSTADOS
+===================================================== -->
+
+<img
+    class="flower flower-side-left"
+    src="flores/lateral_izquierda.png"
+    alt="">
+
+
+<img
+    class="flower flower-side-right"
+    src="flores/lateral_derecha.png"
+    alt="">
+
+
+<!-- =====================================================
+     DECORACIÓN DORADA
+===================================================== -->
+
+<div class="gold-decoration gold-1"></div>
+
+<div class="gold-decoration gold-2"></div>
+
+
+<!-- =====================================================
+     DESTELLOS
+===================================================== -->
+
+<div class="sparkle sparkle-1">✦</div>
+
+<div class="sparkle sparkle-2">✧</div>
+
+<div class="sparkle sparkle-3">✦</div>
+
+<div class="sparkle sparkle-4">✧</div>
+
+
+<!-- =====================================================
+     AUDIO
+===================================================== -->
+
+<audio
+    id="audio"
+    loop>
+
+    <source
+        src="musica/musica.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- =====================================================
+     BOTÓN DE MÚSICA
+===================================================== -->
+
+<button
+    class="music"
+    onclick="toggleMusic()"
+    id="musicButton"
+    aria-label="Activar o desactivar música">
+
+    ♪
+
+</button>
+
+
+<!-- =====================================================
+     PORTADA
+===================================================== -->
+
+<section class="cover">
+
+    <div>
+
+        <div class="invitation-text">
+
+            CON LA BENDICIÓN DE DIOS
+
+            <br>
+
+            Y EL AMOR DE MIS PADRES
+
+        </div>
+
+
+        <div class="xv">
+
+            XV
+
+        </div>
+
+
+        <div class="anos">
+
+            años
+
+        </div>
+
+
+        <div class="name">
+
+            Yuliana
+
+        </div>
+
+
+        <div class="phrase">
+
+            Hay historias y personas que no voy
+            a olvidar y recuerdos que espero
+            siempre llevar a guardar.
+
+            <br><br>
+
+            Porque una parte de mi vida es mi
+            deseo que compartan conmigo en
+            este día tan especial.
+
+        </div>
+
+
+        <div class="divider">
+
+            <span>✦</span>
+
+        </div>
+
+
+        <div class="date">
+
+            <div class="month">
+
+                OCTUBRE
+
+            </div>
+
+
+            <div class="day">
+
+                17
+
+            </div>
+
+
+            <div class="time">
+
+                SÁBADO.
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="#ubicacion"
+            class="button">
+
+            VER DETALLES
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     UBICACIONES
+===================================================== -->
+
+<section
+    class="section"
+    id="ubicacion">
+
+
+    <h2 class="section-title">
+
+        Nuestros lugares
+
+    </h2>
+
+
+    <p class="section-text">
+
+        Te esperamos para compartir juntos
+        cada momento de este día tan especial.
+
+    </p>
+
+
+    <!-- =================================================
+         CEREMONIA
+    ================================================= -->
+
+    <div class="location">
+
+        <div class="location-name">
+
+            Ceremonia
+
+        </div>
+
+
+        <div class="location-address">
+
+            República de Panamá esquina con colombia
+
+            <br>
+
+            Capilla la Asunción de maria
+
+            <br>
+
+            Xochitepec, Morelos
+
+            <br><br>
+
+            14:00 HRS.
+
+        </div>
+
+
+        <a
+            href="https://maps.app.goo.gl/FUi232unsthyMEiV7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button">
+
+            📍 VER UBICACIÓN EN MAPS
+
+        </a>
+
+    </div>
+
+
+    <!-- =================================================
+         CELEBRACIÓN
+    ================================================= -->
+
+    <div class="location">
+
+        <div class="location-name">
+
+            Celebración
+
+        </div>
+
+
+        <div class="location-address">
+
+            Jardin Villa Di Fiori
+
+            <br>
+
+            C. Rep. de Paraguay 20, Centro
+
+            <br>
+
+            Xochitepec, Morelos
+
+            <br><br>
+
+            16:00 HRS.
+
+        </div>
+
+
+        <a
+            href="https://maps.app.goo.gl/txmDbdCs9udve3Y77"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button">
+
+            📍 VER UBICACIÓN EN MAPS
+
+        </a>
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     GALERÍA
+===================================================== -->
+
+<section class="section">
+
+
+    <h2 class="section-title">
+
+        Mis momentos
+
+    </h2>
+
+
+    <p class="section-text">
+
+        Algunos momentos especiales
+        que quiero compartir contigo.
+
+    </p>
+
+
+    <div class="gallery">
+
+
+        <img
+            src="fotos/foto1.jpg"
+            alt="Fotografía 1">
+
+
+        <img
+            src="fotos/foto2.jpg"
+            alt="Fotografía 2">
+
+
+        <img
+            src="fotos/foto3.jpg"
+            alt="Fotografía 3">
+
+
+        <img
+            src="fotos/foto4.jpg"
+            alt="Fotografía 4">
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     PADRES
+===================================================== -->
+
+<section class="section">
+
+
+    <h2 class="section-title">
+
+        Con amor
+
+    </h2>
+
+
+    <p class="section-text">
+
+        Mis padres
+
+    </p>
+
+
+    <div class="parents">
+
+
+        <div>
+
+            <div class="parent-label">
+
+                PADRE
+
+            </div>
+
+
+            <div class="parent-name">
+
+                Ramón
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <div class="parent-label">
+
+                MADRE
+
+            </div>
+
+
+            <div class="parent-name">
+
+                Miriam
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     CONFIRMACIÓN
+===================================================== -->
+
+<section class="section">
+
+
+    <div class="rsvp">
+
+
+        <h2 class="section-title">
+
+            ¿Nos acompañas?
+
+        </h2>
+
+
+        <p class="section-text">
+
+            Será un honor contar con tu presencia
+            en este día tan importante para mí.
+
+            <br><br>
+
+            Por favor confirma tu asistencia.
+
+        </p>
+
+
+        <a
+            href="https://wa.me/527774254495?text=Hola,%20confirmo%20mi%20asistencia%20a%20los%20XV."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button">
+
+            CONFIRMAR ASISTENCIA
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section class="cover">
+
+
+    <div>
+
+
+        <div class="invitation-text">
+
+            TE ESPERO
+
+        </div>
+
+
+        <div class="xv">
+
+            XV
+
+        </div>
+
+
+        <div class="anos">
+
+            años
+
+        </div>
+
+
+        <div class="name">
+
+            Yuliana
+
+        </div>
+
+
+        <div class="divider">
+
+            <span>✦</span>
+
+        </div>
+
+
+        <div class="phrase">
+
+            Gracias por formar parte
+            de este momento tan especial.
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    YULIANA · XV AÑOS
+
+</footer>
+
+
+</div>
+
+
+<script>
+
+
+/* =====================================================
+   MÚSICA
+===================================================== */
+
+const audio =
+    document.getElementById("audio");
+
+const musicButton =
+    document.getElementById("musicButton");
+
+
+let musicStarted = false;
+
+
+/* Intentar autoplay */
+
+window.addEventListener(
+    "load",
+    function() {
+
+        audio.play()
+
+            .then(function() {
+
+                musicStarted = true;
+
+                musicButton.innerHTML = "♫";
+
+            })
+
+            .catch(function() {
+
+                console.log(
+                    "Autoplay bloqueado."
+                );
+
+            });
+
+    }
+);
+
+
+/* Activar música con primera interacción */
+
+function iniciarMusica() {
+
+    if (!musicStarted) {
+
+        audio.play()
+
+            .then(function() {
+
+                musicStarted = true;
+
+                musicButton.innerHTML = "♫";
+
+            })
+
+            .catch(function(error) {
+
+                console.log(
+                    "No fue posible reproducir:",
+                    error
+                );
+
+            });
+
+    }
+
+}
+
+
+document.addEventListener(
+    "click",
+    iniciarMusica,
+    {
+        once: true
+    }
+);
+
+
+document.addEventListener(
+    "touchstart",
+    iniciarMusica,
+    {
+        once: true
+    }
+);
+
+
+/* =====================================================
+   BOTÓN MANUAL
+===================================================== */
+
+function toggleMusic() {
+
+    if (audio.paused) {
+
+        audio.play()
+
+            .then(function() {
+
+                musicStarted = true;
+
+                musicButton.innerHTML = "♫";
+
+            });
+
+    }
+
+    else {
+
+        audio.pause();
+
+        musicButton.innerHTML = "♪";
+
+    }
+
+}
+
+
+/* =====================================================
+   ANIMACIÓN DE SECCIONES
+===================================================== */
+
+const sections =
+    document.querySelectorAll(".section");
+
+
+const observer =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.style.opacity =
+                        "1";
+
+                    entry.target.style.transform =
+                        "translateY(0)";
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: .15
+        }
+
+    );
+
+
+sections.forEach(section => {
+
+    section.style.opacity = "0";
+
+    section.style.transform =
+        "translateY(30px)";
+
+    section.style.transition =
+        "all 1s ease";
+
+    observer.observe(section);
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
